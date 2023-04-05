@@ -1,0 +1,52 @@
+1. Вход в консоль виртуальной машины из хостовой через SSH-соединение
+
+C:\Users\User>ssh -p 8022 nikita@localhost
+nikita@localhost's password:
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.19.0-38-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+
+     https://ubuntu.com/pro
+
+Расширенное поддержание безопасности (ESM) для Applications выключено.
+
+0 обновлений может быть применено немедленно.
+
+Включите ESM Apps для получения дополнительных будущих обновлений безопасности.
+Смотрите https://ubuntu.com/esm или выполните: sudo pro status
+
+Last login: Wed Apr  5 17:59:37 2023 from 10.0.2.2
+
+2. Установка Midnight Commander-a.
+
+nikita@nikita-VirtualBox:~$ sudo apt install mc
+[sudo] пароль для nikita:
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Уже установлен пакет mc самой новой версии (3:4.8.27-1).
+Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 10 пакетов не обновлено.
+
+3. Запуск и выход из MC.
+
+nikita@nikita-VirtualBox:~$ mc
+nikita@nikita-VirtualBox:~$ nikita@nikita-VirtualBox:~$
+
+4. Запрос сведений о системе.
+
+nikita@nikita-VirtualBox:~$ uname -a
+Linux nikita-VirtualBox 5.19.0-38-generic #39~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 17 21:16:15 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+
+5. Разрыв SSH-соединения.
+
+nikita@nikita-VirtualBox:~$ exit
+выход
+Connection to localhost closed.
+
+C:\Users\User>
